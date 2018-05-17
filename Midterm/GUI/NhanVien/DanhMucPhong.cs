@@ -58,5 +58,6 @@ namespace MidTerm
             ThongTinDichVu Menu = new ThongTinDichVu();
             Menu.Show();
         }
+      
     }
 }
