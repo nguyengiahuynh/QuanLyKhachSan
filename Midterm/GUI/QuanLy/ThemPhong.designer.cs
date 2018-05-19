@@ -37,10 +37,12 @@
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtLoaiPhong = new Bunifu.Framework.UI.BunifuDropdown();
+            this.txtTinhTrang = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.txtTinhTrang = new Bunifu.Framework.UI.BunifuDropdown();
-            this.txtLoaiPhong = new Bunifu.Framework.UI.BunifuDropdown();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,7 +81,7 @@
             this.txtMaPhong.BorderThickness = 2;
             this.txtMaPhong.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtMaPhong.ForeColor = System.Drawing.Color.Silver;
+            this.txtMaPhong.ForeColor = System.Drawing.Color.White;
             this.txtMaPhong.isPassword = false;
             this.txtMaPhong.Location = new System.Drawing.Point(22, 77);
             this.txtMaPhong.Margin = new System.Windows.Forms.Padding(4);
@@ -123,6 +125,41 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(438, 411);
             this.panel1.TabIndex = 4;
+            // 
+            // txtLoaiPhong
+            // 
+            this.txtLoaiPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.txtLoaiPhong.BorderRadius = 3;
+            this.txtLoaiPhong.DisabledColor = System.Drawing.Color.Gray;
+            this.txtLoaiPhong.ForeColor = System.Drawing.Color.White;
+            this.txtLoaiPhong.Items = new string[] {
+        "1",
+        "2",
+        "3"};
+            this.txtLoaiPhong.Location = new System.Drawing.Point(22, 144);
+            this.txtLoaiPhong.Name = "txtLoaiPhong";
+            this.txtLoaiPhong.NomalColor = System.Drawing.Color.LightSteelBlue;
+            this.txtLoaiPhong.onHoverColor = System.Drawing.Color.CornflowerBlue;
+            this.txtLoaiPhong.selectedIndex = -1;
+            this.txtLoaiPhong.Size = new System.Drawing.Size(399, 44);
+            this.txtLoaiPhong.TabIndex = 4;
+            // 
+            // txtTinhTrang
+            // 
+            this.txtTinhTrang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.txtTinhTrang.BorderRadius = 3;
+            this.txtTinhTrang.DisabledColor = System.Drawing.Color.Gray;
+            this.txtTinhTrang.ForeColor = System.Drawing.Color.White;
+            this.txtTinhTrang.Items = new string[] {
+        "0",
+        "1"};
+            this.txtTinhTrang.Location = new System.Drawing.Point(22, 210);
+            this.txtTinhTrang.Name = "txtTinhTrang";
+            this.txtTinhTrang.NomalColor = System.Drawing.Color.LightSteelBlue;
+            this.txtTinhTrang.onHoverColor = System.Drawing.Color.CornflowerBlue;
+            this.txtTinhTrang.selectedIndex = -1;
+            this.txtTinhTrang.Size = new System.Drawing.Size(399, 44);
+            this.txtTinhTrang.TabIndex = 3;
             // 
             // bunifuThinButton22
             // 
@@ -178,40 +215,19 @@
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
-            // txtTinhTrang
+            // bunifuDragControl1
             // 
-            this.txtTinhTrang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.txtTinhTrang.BorderRadius = 3;
-            this.txtTinhTrang.DisabledColor = System.Drawing.Color.Gray;
-            this.txtTinhTrang.ForeColor = System.Drawing.Color.White;
-            this.txtTinhTrang.Items = new string[] {
-        "0",
-        "1"};
-            this.txtTinhTrang.Location = new System.Drawing.Point(22, 210);
-            this.txtTinhTrang.Name = "txtTinhTrang";
-            this.txtTinhTrang.NomalColor = System.Drawing.Color.LightSteelBlue;
-            this.txtTinhTrang.onHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.txtTinhTrang.selectedIndex = -1;
-            this.txtTinhTrang.Size = new System.Drawing.Size(399, 44);
-            this.txtTinhTrang.TabIndex = 3;
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.Vertical = true;
             // 
-            // txtLoaiPhong
+            // bunifuDragControl2
             // 
-            this.txtLoaiPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.txtLoaiPhong.BorderRadius = 3;
-            this.txtLoaiPhong.DisabledColor = System.Drawing.Color.Gray;
-            this.txtLoaiPhong.ForeColor = System.Drawing.Color.White;
-            this.txtLoaiPhong.Items = new string[] {
-        "1",
-        "2",
-        "3"};
-            this.txtLoaiPhong.Location = new System.Drawing.Point(22, 144);
-            this.txtLoaiPhong.Name = "txtLoaiPhong";
-            this.txtLoaiPhong.NomalColor = System.Drawing.Color.LightSteelBlue;
-            this.txtLoaiPhong.onHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.txtLoaiPhong.selectedIndex = -1;
-            this.txtLoaiPhong.Size = new System.Drawing.Size(399, 44);
-            this.txtLoaiPhong.TabIndex = 4;
+            this.bunifuDragControl2.Fixed = true;
+            this.bunifuDragControl2.Horizontal = true;
+            this.bunifuDragControl2.TargetControl = this;
+            this.bunifuDragControl2.Vertical = true;
             // 
             // ThemPhong
             // 
@@ -245,5 +261,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuDropdown txtTinhTrang;
         private Bunifu.Framework.UI.BunifuDropdown txtLoaiPhong;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
     }
 }

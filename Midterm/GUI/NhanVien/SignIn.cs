@@ -38,7 +38,10 @@ namespace MidTerm
             } else if (check == 2)
             {
                 this.Hide();
-                Dashboard Menu = new Dashboard();
+                Dashboard Menu = new Dashboard(user);
+                QuanLyNhanVien qlnv = new QuanLyNhanVien(user);
+                QuanLyPhong qlp = new QuanLyPhong(user);
+                BaoCao bc = new BaoCao(user);
                 Menu.Show();
             }
             
@@ -47,6 +50,11 @@ namespace MidTerm
         private void bunifuMetroTextbox1_OnValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

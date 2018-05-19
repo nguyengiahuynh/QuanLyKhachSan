@@ -16,7 +16,7 @@ namespace MidTerm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyPhong());
+            Application.Run(new SignIn());
         }
     }
 }

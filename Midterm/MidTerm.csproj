@@ -33,6 +33,26 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\Bunifu_UI_v1.5.3.dll</HintPath>
@@ -50,11 +70,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\LoaiPhongBUS.cs" />
+    <Compile Include="BUS\PhieuThueBUS.cs" />
     <Compile Include="BUS\PhongBUS.cs" />
     <Compile Include="BUS\QuanTriBUS.cs" />
+    <Compile Include="DAO\LoaiPhongDAO.cs" />
+    <Compile Include="DAO\PhieuThueDAO.cs" />
     <Compile Include="DAO\PhongDAO.cs" />
     <Compile Include="DAO\QuanTriDAO.cs" />
     <Compile Include="DAO\XL_DULIEU.cs" />
+    <Compile Include="DTO\LoaiPhong.cs" />
+    <Compile Include="DTO\PhieuThue.cs" />
     <Compile Include="DTO\Phong.cs" />
     <Compile Include="DTO\QuanTri.cs" />
     <Compile Include="GUI\NhanVien\DanhMucPhong.cs">
@@ -87,6 +113,18 @@
     <Compile Include="GUI\QuanLy\BaoCao.designer.cs">
       <DependentUpon>BaoCao.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\QuanLy\ChinhSuaThongTinPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLy\ChinhSuaThongTinPhong.Designer.cs">
+      <DependentUpon>ChinhSuaThongTinPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLy\ChinhSuaThongTinQuanTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLy\ChinhSuaThongTinQuanTri.Designer.cs">
+      <DependentUpon>ChinhSuaThongTinQuanTri.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\QuanLy\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,12 +136,6 @@
     </Compile>
     <Compile Include="GUI\QuanLy\QuanLyNhanVien.designer.cs">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\QuanLy\QuanLyNoiQuy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\QuanLy\QuanLyNoiQuy.designer.cs">
-      <DependentUpon>QuanLyNoiQuy.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\QuanLy\QuanLyPhong.cs">
       <SubType>Form</SubType>
@@ -117,17 +149,29 @@
     <Compile Include="GUI\QuanLy\ThemNhanVien.designer.cs">
       <DependentUpon>ThemNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\QuanLy\ThemNoiQuy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\QuanLy\ThemNoiQuy.designer.cs">
-      <DependentUpon>ThemNoiQuy.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\QuanLy\ThemPhong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\QuanLy\ThemPhong.designer.cs">
       <DependentUpon>ThemPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLy\ThongTinQuanTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLy\ThongTinQuanTri.Designer.cs">
+      <DependentUpon>ThongTinQuanTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLy\XoaPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLy\XoaPhong.Designer.cs">
+      <DependentUpon>XoaPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLy\XoaQuanTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLy\XoaQuanTri.Designer.cs">
+      <DependentUpon>XoaQuanTri.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -158,14 +202,17 @@
     <EmbeddedResource Include="GUI\QuanLy\BaoCao.resx">
       <DependentUpon>BaoCao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLy\ChinhSuaThongTinPhong.resx">
+      <DependentUpon>ChinhSuaThongTinPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLy\ChinhSuaThongTinQuanTri.resx">
+      <DependentUpon>ChinhSuaThongTinQuanTri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLy\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLy\QuanLyNhanVien.resx">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanLy\QuanLyNoiQuy.resx">
-      <DependentUpon>QuanLyNoiQuy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLy\QuanLyPhong.resx">
       <DependentUpon>QuanLyPhong.cs</DependentUpon>
@@ -173,11 +220,17 @@
     <EmbeddedResource Include="GUI\QuanLy\ThemNhanVien.resx">
       <DependentUpon>ThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanLy\ThemNoiQuy.resx">
-      <DependentUpon>ThemNoiQuy.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLy\ThemPhong.resx">
       <DependentUpon>ThemPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLy\ThongTinQuanTri.resx">
+      <DependentUpon>ThongTinQuanTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLy\XoaPhong.resx">
+      <DependentUpon>XoaPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLy\XoaQuanTri.resx">
+      <DependentUpon>XoaQuanTri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

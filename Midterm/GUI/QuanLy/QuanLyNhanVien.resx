@@ -684,6 +684,22 @@
         jSzbWVfZ2WZRD19kuuyy/wURLsAM2wkNmQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="btnLoadAll.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALkAAAAiCAYAAAADDHjcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJgSURBVHhe7ZzNS1RhFIf7r6RFuKhNtAihj0W6yECkKKVS
+        KgsJCSRECZzAj0W6iRiJSinKgpqFs0iJGAgmYRhCR1AXl6KFbU783rneGubmtrmH54EfDNy5s3ruy7nn
+        Pe8ciqLICPEcJCfug+TEfZCcuA+SE/dBcuI+B0q+vb1jz56/sxs3H1hP74id7Oi3tsNdhPz3yEU5efXa
+        mOXzr21jcyvVYeWfki+/XQk/NHR70t4sF21t7YvVajsG0ArIRTn5/sOq3R2ZCq5K9jSXmyTXE3FnOGd9
+        /fdtdzeKfxKgtfn+42eQ/fKVUatUvjU43SC5BD/XecuWlgrxrQDZYqX42c5fGLZyuZIuuVZwBIesozJG
+        9XqT5KrBVaIAeCD38IlNzyz8kVxdFBXu1ODghb29X9bZNWSlUrkuud5KVbQDeGJuftHGJ+brkqvXqFYM
+        gCfKX6uhkRIkP3XmulWrtfgSgA9Ushxp765LfvRYT+gzAnhDu6NBcn0A8EgiuZZ0Le0A3kgkV/uQuRTw
+        SCK59vu1HQrgCTVT1FQJkk9N58MOEYAnNKKiUZUguYZZTp8doC4HVwwMTtjLV4W65Mpk7rHNzD6NLwNk
+        G52B0GEfuZ1IrvkVTW6VSuvx1wCyiWawVJnsnxZKJFc0zKKhFnY/IatI8N6L96xQ+Jh43SC5Uix+Cvv9
+        j+ZexLcBZAPNX2kF/1twpUlyRaWLprf0ROgNlRFcaFU0jqL6W2eRNWiYdqA5VfL96IlQC+b4iUuhqU5I
+        q0VzV3rB1L9KpDmsHCg5IR6C5MR9kJy4D5IT90Fy4jyR/QYWIiI+KumMsQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGMAAAAiCAYAAABLP2dcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -771,5 +787,11 @@
   </metadata>
   <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>141, 17</value>
+  </metadata>
+  <metadata name="bunifuDragControl2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>301, 17</value>
+  </metadata>
+  <metadata name="bunifuDragControl3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>461, 17</value>
   </metadata>
 </root>

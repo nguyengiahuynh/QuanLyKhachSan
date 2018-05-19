@@ -38,5 +38,66 @@ namespace MidTerm.BUS
                 throw ex;
             }
         }
+
+        public bool KiemTraMaPhong(Phong phong)
+        {
+            try
+            {
+                return phongDAO.KiemTraMaPhong(phong);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void XoaPhong(Phong phong)
+        {
+            try
+            {
+                phongDAO.XoaPhong(phong);
+                MessageBox.Show("Xóa phòng thành công");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public Phong LayThongTinPhongQuaMaPhong(string maPhong)
+        {
+            try
+            {
+                return phongDAO.LayThongTinPhongQuaMaPhong(maPhong);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public void SuaPhong(Phong phong)
+        {
+            try
+            {
+                phongDAO.SuaPhong(phong);
+                MessageBox.Show("Sửa thông tin phòng thành công");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public DataTable TimPhong(Phong phong)
+        {
+            try
+            {
+                return phongDAO.TimPhong(phong);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

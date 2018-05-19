@@ -233,7 +233,7 @@
             this.txtPassword.BorderThickness = 2;
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtPassword.ForeColor = System.Drawing.Color.Silver;
+            this.txtPassword.ForeColor = System.Drawing.Color.White;
             this.txtPassword.isPassword = true;
             this.txtPassword.Location = new System.Drawing.Point(22, 417);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
@@ -250,7 +250,7 @@
             this.txtUsername.BorderThickness = 2;
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtUsername.ForeColor = System.Drawing.Color.Silver;
+            this.txtUsername.ForeColor = System.Drawing.Color.White;
             this.txtUsername.isPassword = false;
             this.txtUsername.Location = new System.Drawing.Point(22, 349);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
@@ -267,7 +267,7 @@
             this.txtDiaChi.BorderThickness = 2;
             this.txtDiaChi.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtDiaChi.ForeColor = System.Drawing.Color.Silver;
+            this.txtDiaChi.ForeColor = System.Drawing.Color.White;
             this.txtDiaChi.isPassword = false;
             this.txtDiaChi.Location = new System.Drawing.Point(22, 281);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
@@ -284,7 +284,7 @@
             this.txtSDT.BorderThickness = 2;
             this.txtSDT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtSDT.ForeColor = System.Drawing.Color.Silver;
+            this.txtSDT.ForeColor = System.Drawing.Color.White;
             this.txtSDT.isPassword = false;
             this.txtSDT.Location = new System.Drawing.Point(22, 213);
             this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
@@ -312,7 +312,7 @@
             this.txtTen.BorderThickness = 2;
             this.txtTen.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtTen.ForeColor = System.Drawing.Color.Silver;
+            this.txtTen.ForeColor = System.Drawing.Color.White;
             this.txtTen.isPassword = false;
             this.txtTen.Location = new System.Drawing.Point(22, 145);
             this.txtTen.Margin = new System.Windows.Forms.Padding(4);
@@ -340,7 +340,7 @@
             this.txtCMND.BorderThickness = 2;
             this.txtCMND.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtCMND.ForeColor = System.Drawing.Color.Silver;
+            this.txtCMND.ForeColor = System.Drawing.Color.White;
             this.txtCMND.isPassword = false;
             this.txtCMND.Location = new System.Drawing.Point(22, 77);
             this.txtCMND.Margin = new System.Windows.Forms.Padding(4);

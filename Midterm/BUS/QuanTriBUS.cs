@@ -53,5 +53,72 @@ namespace MidTerm.BUS
             }
             else return 0;
         }
+
+        public void XoaNhanVien(QuanTri quanTri)
+        {
+            try
+            {
+                quanTriDAO.XoaNhanVien(quanTri);
+                MessageBox.Show("Xóa nhân viên thành công");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public bool KiemTraCMND(QuanTri quanTri)
+        {
+            try
+            {
+                return quanTriDAO.KiemTraCMND(quanTri);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public DataTable TimNhanVien(QuanTri quanTri)
+        {
+            try
+            {
+                return quanTriDAO.TimNhanVien(quanTri);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void SuaNhanVien(QuanTri quanTri)
+        {
+            try
+            {
+                quanTriDAO.SuaNhanVien(quanTri);
+                MessageBox.Show("Sửa thông tin thành công");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public QuanTri LayThongTinNhanVienQuaCMND(string CMND)
+        {
+            return quanTriDAO.LayThongTinNhanVienQuaCMND(CMND);
+        }
+
+        public bool KiemTraUsername(QuanTri quanTri)
+        {
+            try
+            {
+                return quanTriDAO.KiemTraUsername(quanTri);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

@@ -43,5 +43,25 @@ namespace MidTerm.DAO
 
             return kq;
         }
+
+        public bool KiemTra(string sql)
+        {
+            SqlConnection ket_noi = new SqlConnection(duong_dan);
+            SqlCommand lenh = new SqlCommand(sql, ket_noi);
+            ket_noi.Open();
+
+            SqlDataReader dr = lenh.ExecuteReader();
+
+            if (dr.Read() == true)
+            {
+                ket_noi.Close();
+                return true;
+            }
+            else
+            {
+                ket_noi.Close();
+                return false;
+            }
+        }
     }
 }

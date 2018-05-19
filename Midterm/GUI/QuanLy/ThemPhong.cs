@@ -33,11 +33,17 @@ namespace MidTerm
                 phong.maPhong = txtMaPhong.Text;
                 phong.loaiPhong = int.Parse(txtLoaiPhong.selectedValue);
                 phong.tinhTrang = int.Parse(txtTinhTrang.selectedValue);
-                phongBUS.ThemPhong(phong);
-                txtMaPhong.Text = "";
-                txtMaPhong.Focus();
-                QuanLyPhong quanLyPhong = new QuanLyPhong();
-                quanLyPhong.HienThi(phongBUS.LayDanhSachPhong());
+                if (phongBUS.KiemTraMaPhong(phong))
+                {
+                    txtMaPhong.Text = "";
+                    txtMaPhong.Focus();
+                    MessageBox.Show("Phòng cần thêm đã tồn tại trong danh sách!! Xin nhập lại");
+                }
+                else
+                {
+                    phongBUS.ThemPhong(phong);
+                    this.Close();
+                }
             }
         }
 

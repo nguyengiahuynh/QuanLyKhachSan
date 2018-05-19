@@ -40,14 +40,22 @@ namespace MidTerm
                 quanTri.capBac = int.Parse(txtCapBac.selectedValue);
                 quanTri.username = txtUsername.Text;
                 quanTri.password = txtPassword.Text;
-                quanTriBUS.ThemNhanVien(quanTri);
-                txtCMND.Text = "";
-                txtDiaChi.Text = "";
-                txtPassword.Text = "";
-                txtSDT.Text = "";
-                txtTen.Text = "";
-                txtUsername.Text = "";
-                txtCMND.Focus();
+                if (quanTriBUS.KiemTraCMND(quanTri) || quanTriBUS.KiemTraUsername(quanTri))
+                {
+                    txtCMND.Text = "";
+                    txtTen.Text = "";
+                    txtSDT.Text = "";
+                    txtDiaChi.Text = "";
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
+                    txtCMND.Focus();
+                    MessageBox.Show("Người cần thêm có CMND hoặc Username đã tồn tại trong danh sách!! Xin nhập lại");
+                }
+                else
+                {
+                    quanTriBUS.ThemNhanVien(quanTri);
+                    this.Close();
+                }
             }
         }
 
@@ -56,6 +64,7 @@ namespace MidTerm
             this.Close();
         }
 
+     
        
 
 
