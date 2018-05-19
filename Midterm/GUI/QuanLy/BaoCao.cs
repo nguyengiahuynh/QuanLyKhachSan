@@ -70,6 +70,8 @@ namespace MidTerm
         {
             QuanTriBUS quanTriBUS = new QuanTriBUS();
             string hoTen = quanTriBUS.LayThongTinMotNhanVien(username).ten;
+            HoaDonBUS hoaDonBUS = new HoaDonBUS();
+            bunifuCustomDataGrid1.DataSource = hoaDonBUS.LayDanhSachHoaDon();
             label2.Text = "Xin chào! " + hoTen;
         }
 
@@ -79,6 +81,37 @@ namespace MidTerm
         {
             ThongTinQuanTri ttqt = new ThongTinQuanTri(username);
             ttqt.Show();
+        }
+
+        private void bunifuThinButton24_Click(object sender, EventArgs e)
+        {
+            DoanhThu01 dt = new DoanhThu01();
+            dt.ShowDialog();
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            DoanhThu02 dt = new DoanhThu02();
+            dt.ShowDialog();
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            DoanhThu03 dt = new DoanhThu03();
+            dt.ShowDialog();
+        }
+
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+            DoanhThu04 dt = new DoanhThu04();
+            dt.ShowDialog();
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignIn si = new SignIn();
+            si.ShowDialog();
         }
     }
 }

@@ -80,5 +80,12 @@ namespace MidTerm
             ThongTinQuanTri ttqt = new ThongTinQuanTri(username);
             ttqt.Show();
         }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignIn si = new SignIn();
+            si.ShowDialog();
+        }
     }
 }

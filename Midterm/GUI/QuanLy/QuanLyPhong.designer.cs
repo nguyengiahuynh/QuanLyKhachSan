@@ -331,6 +331,7 @@
             this.bunifuImageButton3.TabIndex = 16;
             this.bunifuImageButton3.TabStop = false;
             this.bunifuImageButton3.Zoom = 10;
+            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
             // 
             // bunifuImageButton4
             // 

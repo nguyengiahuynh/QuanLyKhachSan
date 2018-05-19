@@ -93,3 +93,7 @@ C:\Users\Admin\Desktop\QuanLyKhachSan\MidTerm\obj\Debug\MidTerm.GUI.QuanLy.Thong
 C:\Users\Admin\Desktop\QuanLyKhachSan\MidTerm\obj\Debug\MidTerm.GUI.QuanLy.XoaPhong.resources
 C:\Users\Admin\Desktop\QuanLyKhachSan\MidTerm\obj\Debug\MidTerm.GUI.QuanLy.ChinhSuaThongTinQuanTri.resources
 C:\Users\Admin\Desktop\QuanLyKhachSan\MidTerm\obj\Debug\MidTerm.GUI.QuanLy.ChinhSuaThongTinPhong.resources
+C:\Users\Admin\Desktop\QuanLyKhachSan\MidTerm\obj\Debug\MidTerm.GUI.QuanLy.DoanhThu01.resources
+C:\Users\Admin\Desktop\QuanLyKhachSan\MidTerm\obj\Debug\MidTerm.GUI.QuanLy.DoanhThu02.resources
+C:\Users\Admin\Desktop\QuanLyKhachSan\MidTerm\obj\Debug\MidTerm.GUI.QuanLy.DoanhThu03.resources
+C:\Users\Admin\Desktop\QuanLyKhachSan\MidTerm\obj\Debug\MidTerm.GUI.QuanLy.DoanhThu04.resources

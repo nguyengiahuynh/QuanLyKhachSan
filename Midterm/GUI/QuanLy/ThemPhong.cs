@@ -23,7 +23,7 @@ namespace MidTerm
         {
             if (txtMaPhong.Text == "")
             {
-                MessageBox.Show("Bạn chưa điền đầy đủ thông tin phía trên");
+                MessageBox.Show("Bạn chưa điền đầy đủ thông tin phía trên!! Xin nhập lại");
                 return;
             }
             else

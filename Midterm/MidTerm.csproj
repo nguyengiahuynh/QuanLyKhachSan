@@ -70,15 +70,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\HoaDonBUS.cs" />
     <Compile Include="BUS\LoaiPhongBUS.cs" />
     <Compile Include="BUS\PhieuThueBUS.cs" />
     <Compile Include="BUS\PhongBUS.cs" />
     <Compile Include="BUS\QuanTriBUS.cs" />
+    <Compile Include="DAO\HoaDonDAO.cs" />
     <Compile Include="DAO\LoaiPhongDAO.cs" />
     <Compile Include="DAO\PhieuThueDAO.cs" />
     <Compile Include="DAO\PhongDAO.cs" />
     <Compile Include="DAO\QuanTriDAO.cs" />
     <Compile Include="DAO\XL_DULIEU.cs" />
+    <Compile Include="DTO\HoaDon.cs" />
     <Compile Include="DTO\LoaiPhong.cs" />
     <Compile Include="DTO\PhieuThue.cs" />
     <Compile Include="DTO\Phong.cs" />
@@ -130,6 +133,30 @@
     </Compile>
     <Compile Include="GUI\QuanLy\Dashboard.designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLy\DoanhThu01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLy\DoanhThu01.Designer.cs">
+      <DependentUpon>DoanhThu01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLy\DoanhThu02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLy\DoanhThu02.Designer.cs">
+      <DependentUpon>DoanhThu02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLy\DoanhThu03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLy\DoanhThu03.Designer.cs">
+      <DependentUpon>DoanhThu03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLy\DoanhThu04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLy\DoanhThu04.Designer.cs">
+      <DependentUpon>DoanhThu04.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\QuanLy\QuanLyNhanVien.cs">
       <SubType>Form</SubType>
@@ -210,6 +237,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLy\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLy\DoanhThu01.resx">
+      <DependentUpon>DoanhThu01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLy\DoanhThu02.resx">
+      <DependentUpon>DoanhThu02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLy\DoanhThu03.resx">
+      <DependentUpon>DoanhThu03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLy\DoanhThu04.resx">
+      <DependentUpon>DoanhThu04.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLy\QuanLyNhanVien.resx">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
